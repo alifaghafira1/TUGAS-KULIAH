@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f0f2f5; 
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.TempatUtama{
+display: grid;
+grid-template-columns: 1fr 1fr;
+max-width: 1920px;
+width: 100%;
+margin: 0 auto;
+min-height: 100vh;
+}
+
+.kananLogin{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F7C325;
+    align-items: center;
+    z-index: 1;
+    margin: 0px;
+    gap: 20px;
+    
+}
+.gambar{
+    left: -250px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.gambar img {
+   width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transform: translateX(-5%);
+}
+.kiriGambar{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+}
+
+h2{
+    color: #4A154B;
+    align-items: center;
+    font-family: Verdana, Geneva, 'Tahoma', sans-serif;
+}
+.formulir{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.kotak1{
+    width: 300px;
+    height: 40px;
+    border-radius:20px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 4px;
+    font-size: 12px;
+    margin: 0 auto;
+    border:none;
+    gap: 80px;
+    align-items: center;
+    
+    
+}
+
+.teksKotak1{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 30px;
+}
+.gambarKotak1 img{
+    width: 45px;
+    height: auto;
+    object-fit: contain;
+}
+.teksKotak1 p{
+    margin: 0;
+}
+.kotak1:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transform: translateY(-2px);
+    transition: all 0.2s ease;
+}
+.TK1 {
+font-weight: bold;
+}
+
+.TeksLuar{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: Verdana, Geneva, 'Tahoma', sans-serif;
+    font-weight: bold;
+    color: white;
+    opacity: 0.8;
+}
+
+.kotak2{
+    width: 300px;
+    height: 40px;
+    border-radius:5px;
+    background-color: white;
+    align-items: center;
+    outline: none;
+    display: block;
+    padding: 0 0 0 15px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    line-height: 40px;
+    text-align: left;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+    
+.kotak4{
+    width: 300px;
+    height: 40px;
+    border-radius:5px;
+    background-color: white;
+    align-items: center;
+    outline: none;
+    display: block;
+    padding: 0 0 0 15px;
+
+    line-height: 40px;
+    text-align: left;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+    
+.kotak2::placeholder{
+    color: #999;
+    font-size: 14px;
+}
+.kotak4::placeholder{
+    color: #999;
+    font-size: 14px;
+}
+
+form.kotak2{
+   border:none;
+   box-shadow: none;
+}
+
+form.kotak4{
+   border:none;
+   box-shadow: none;
+}
+
+.kotak3{
+   width: 300px;
+    height: 40px;
+    border-radius:20px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1px;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-top: 20px;
+    Background-color: #4A154B;
+    outline: none;
+    border: none;
+  }
+  .kotak3:hover {
+    background-color: #2e0a2b;
+    cursor: pointer;
+  }
+
+.TK3{
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+
+}
+.TK3 p{
+    margin: 0;
+    
+}
+
+
+.remember-me {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #4A154B;
+    font-family: Verdana, Geneva, 'Tahoma', sans-serif;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.remember-me input[type="checkbox"] {
+    accent-color: #4A154B; 
+    width: 15px;
+    height: 15px;
+}
+
+.remember-me label {
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .TempatUtama {
+        grid-template-columns: 1fr;
+    }
+    .kiriGambar {
+        display: none;
+    }
+    .kananLogin {
+        min-height: 100vh;
+        padding: 20px;
+    }
+}
